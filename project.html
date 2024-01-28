@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .logo img{
+            width: 150px;
+            height: 50px;
+    
+        }  
+        .header{
+            display: flex;
+            margin: 10px 0px 0px 200px;
+        }
+        .header ul{
+            display: flex;
+        }
+        .search i{
+            margin-right: 20px;
+            margin-top: 5px;
+            padding-left: 20px;
+        } 
+        ul{
+            list-style: none;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        .header ul li a{
+            font-family: Khmer S4;
+            padding: 10px;
+        }
+        .user i{
+            margin-left: 200px;
+            border-right: 2px solid rgb(114, 112, 112);
+            padding-right: 20px;
+        }
+        .card{
+            margin-left: 15px;
+            color: rgb(255, 255, 255);
+            width: 100px;
+            height: 30px;
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: -5px;
+        }
+        .back{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(189, 189, 197);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .back ul{
+            display: flex;
+            align-content: space-between;
+            margin-left: 240px;
+        }
+        .back ul li{
+            padding-right: 20px;
+        }
+        .back ul li a img{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 20px;
+            transition: ease-in-out 240ms;
+            box-shadow: 0px 0px 3px black;
+            margin-top: -10px;
+        }
+        
+        .back ul li a img:hover{
+            transform: scale(1.2);
+        }
+        .back1{
+            width: 100%;
+            height: 370px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10px;
+        }
+        .back1 ul{
+           margin: auto;
+           display: flex;
+           margin-left: 250px;
+        }
+        .back1 ul li img{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            
+            box-shadow: 0px 0px 2px black;
+        }
+        .back1 ul li{
+            margin: 10px;
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+            color: black;
+            font-family:Khmer UI;
+        }
+        .back1 ul li:first-child img:hover{
+            content: url("/home-kitchen-gadgets-scaled-1.jpeg");
+        }
+        .back1 ul li:nth-child(2) img:hover{
+            content: url("/kitchen-supplies-store.jpg");
+        }
+        .back1 ul li:nth-child(3) img:hover{
+            content: url("/kitchen-utensils-182362-1.webp");
+        }
+        .back2{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+        }
+        .back2 ul{
+            display: flex;
+            margin-left: 300px;
+        }
+        .back2 ul li{
+            margin: 20px;
+        }
+        .back2 ul li:first-child a img{
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        .back2 ul li:nth-child(2) a img{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        .back2 ul li:nth-child(3) a img{
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        .back2 ul li:hover{
+            transform: scale(1.2);
+        }
+        .load{
+            width: 100%;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .load h3{
+            text-align: center;
+            width: 100px;
+            height: 20px;
+            background-color: black;
+            color: white;
+            margin: auto;
+        }
+        .back3{
+            width: 100%;
+            height: 900px;
+            background-color: rgb(211, 209, 209);
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .back3 ul li:first-child a img{
+            width: 250px;
+            height: 250px;
+            box-shadow: 0px 0px 2px black;
+            border-radius: 20px;
+            transition: ease-in-out 300ms;
+        }
+        .back3 ul li{
+            padding: 0px 20px;
+        }
+        .back3 ul{
+            margin: 0px 280px;
+            display: flex;
+        }
+        .back3{
+            text-align: center;
+        }
+        .back3 ul li a img:hover{
+            transform: scale(1.2);
+        }
+        .back3 ul li:nth-child(2) a img{
+            width: 250px;
+            height: 250px;
+            box-shadow: 0px 0px 2px black;
+            border-radius: 20px;
+            transition: ease-in-out 300ms;
+        }
+        .back3 ul li:nth-child(3) a img{
+            width: 220px;
+            height: 220px;
+            box-shadow: 0px 0px 2px black;
+            border-radius: 20px;
+            transition: ease-in-out 300ms;
+        }
+        @media (max-width: 850px){
+            #product-grid-2124783387 .grid-col-1{height: 433.33333333333px}
+            #product-grid-2124783387 .grid-col-1-2{height: 216.66666666667px}
+            #product-grid-2124783387 .grid-col-1-3{height:144.44444444444px}
+            #product-grid-2124783387 .grid-col-2-3{height: 288.88888888889px}
+            #product-grid-2124783387 .grid-col-1-4{height: 108.33333333333px}
+            #product-grid-2124783387 .grid-col-3-4{height: 325px}
+          }
+              /* Mobile */
+        @media (max-width: 550px){
+            #product-grid-2124783387 .grid-col-1{height: 433.33333333333px}
+            #product-grid-2124783387 .grid-col-1-2{height: 216.66666666667px}
+            #product-grid-2124783387 .grid-col-1-3{height:144.44444444444px}
+            #product-grid-2124783387 .grid-col-2-3{height: 288.88888888889px}
+            #product-grid-2124783387 .grid-col-1-4{height: 108.33333333333px}
+            #product-grid-2124783387 .grid-col-3-4{height: 325px}
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="/Logo1.ico" alt="" ></div>
+        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <ul>
+            <li><a href="">ទំព័រដើម</a></li>
+            <li><a href="">សំភារៈផ្ទះបាយ</a></li>
+            <li><a href="">សំភារៈប្រើប្រាស់ក្នុងផ្ទះ</a></li>
+            <li><a href="">គ្រឿងអេឡិចត្រូនិក</a></li>
+        </ul>
+        <div class="user"><i class="fa-solid fa-user"></i></div> 
+        <div class="card">Card/$0.00<i class="fa-solid fa-store"></i></div>
+    </div>
+    <div class="back">
+        <div class="title"><h1>សូមស្វាគមន៍មកកាន់ ផ្សារអនឡាញ</h1></div><br>
+        <div class="item">
+            <ul>
+                <li><a href=""><img src="/p61U1QJA.original.original.original.avif" alt=""></a></li>
+                <li><a href=""><img src="/kitchen-supplies-store.jpg" alt=""></a></li>
+                <li><a href=""><img src="/home-kitchen-gadgets-scaled-1.jpeg" alt=""></a></li>
+                <li><a href=""><img src="/s-l1600.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <h2><center>&#128221;ផលិតផលចូលស្តុកថ្មីៗ&#128722</center></h2>
+    <div class="back1">
+        <div class="item2">
+            <ul>
+                <li><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpqSPWp-dHxx-G-FOY2PFjdPEIBAjBfCR_uA&usqp=CAU" alt=""><p>ម៉ាសុីនបូមធូលីកាន់ដៃ ខ្នាត <br>តូច ងាយស្រួលប្រើ មានមុខដូរ2</p><center>$7.00</center></a></li>
+                <li><a href="#"><img src="https://hips.hearstapps.com/hmg-prod/images/cool-kitchen-gadgets-65566c82b2c29.jpg?crop=0.495xw:0.990xh;0,0&resize=640:*" alt=""><p>អំពូលLED ប្តូរពណ៌បានច្រើនពណ៌ ប្រវែង10m</p><center>$7.00</center></a></li>
+                <li><a href="#"><img src="https://hips.hearstapps.com/hmg-prod/images/cool-cooking-gadgets-1648564118.jpg" alt=""><p>ទឹកអប់ស្ងួត មានខ្លិនក្រអូបបានយូរ<br></p><center>$2.00</center></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="back2">
+        <div class="item3">
+            <ul>
+                <li><a href="#"><img src="https://my-live-01.slatic.net/p/256b8c3bdf8e1ec38b2ef1ce15e0373e.jpg" alt=""><p>CASIO ម៉ូតថ្មី រូបបេះដូង Cute 🥰​</p></a></li>
+                <li><a href="#"><img src="https://gd.image-gmkt.com/li/571/076/1416076571.g_520-w-st_g.jpg" alt=""><p>CASIO ម៉ូតថ្មី តុក្កតា Cute 🥰</p></a></li>
+                <li><a href="#"><img src="https://image.made-in-china.com/44f3j00RwcLUhanYTob/Private-Label-Shampoo-Agran-Oil-Hair-Growth-Shammpoo-Nourishes-The-Scalp-for-Hair-Treatment.webp" alt=""><p>ច្រាស់ដុសខ្នង​ ម៉ូតថ្មីងាយស្រួលដុសសំអាតខ្លួន</p></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="load">
+        <h3>Load more</h3>
+    </div>
+    <div class="back3">
+        <h1>សំភារៈផ្ទះបាយ</h1>
+        <div class="item4">
+                <ul>
+                    <li><a href="#"><img src="https://media01.stockfood.com/largepreviews/Mzc5MzQ1Njk4/12236958-Kitchen-utensils-for-making-basmati-rice-with-carrots-and-chives.jpg" alt=""><p>ទូដែកដាក់លើម៉ាស៊ីនបោកមានទ្វារបិតជិត ស្អាត ដែកក្រាស់ល្អ</p><center>$10.00</center></a></li>
+                    <li><a href="#"><img src="https://media.karousell.com/media/photos/products/2022/5/2/kitchen_equipment_1651500120_47092cb5_progressive" alt=""><p>ម៉ាស៊ីនបំពងស្ងួត Brand RAF គុណភាពល្អ</p><center></center></a></li>
+                    <li><a href="#"><img src="https://www.seriouseats.com/thmb/WexM5eMOCZY2PFO7xQ_60c2Hmjk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2017__06__20190610-kitchen-starter-equipment-vicky-wasik-1-33650db9ee6a4b5982dc8a18d1c6ef90.jpg" alt=""><p>កំសៀវដាំទឹកក្ដៅ Brand RAF</p><center>$23.00</center></a></li>
+                </ul>
+                <div class="item5">
+                    <ul>
+                        <li><a href="#"><img src="https://www.foodequipment.com.au/media/wysiwyg/blog/Factors-When-Choosing-Kitchen-Equipment-Suppliers.jpg" alt=""><p>ធ្នើដាក់សំភារៈ កំពស់3ជាន់</p><center>$10.00</center></a></li>
+                        <li><a href="#"><img src="https://concept.fra1.digitaloceanspaces.com/concept_cuisine/Resources/SubCategoryimages/10270.jpg" alt=""><p>ឈុតស្លាបព្រាសមម៉ូតថ្មីស្អាតៗ ១ឈុតមាន២៤មុខ</p><center>$400.00</center></a></li>
+                        <li><a href="#"><img src="https://www.tasteofhome.com/wp-content/uploads/2020/01/green-pan-nonstick-skillet-2-via-greenpan.us-ecomm.jpg?fit=700%2C700" alt=""><p>ឈុតកំបិតមានជ្រុញម៉ូតថ្មី មា25មុខ</p><center>$70.00</center></a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>
